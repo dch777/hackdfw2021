@@ -1,7 +1,10 @@
 import React from "react";
+import Home from "./components/Home"
+import Hub from "./components/Hub"
+import HubsList from "./components/HubsList"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
+const App = (props) => {
 	return (
 		<div>
 			<Router>
