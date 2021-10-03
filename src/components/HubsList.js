@@ -21,6 +21,15 @@ const HubsList = (props) => {
 	return (
 		<Box display="flex" justifyContent="center" alignItems="center" minHeight="90vh">
 			<Grid container justifyContent="space-evenly" xs={8} spacing={3}>
+				<Grid item xs={12}>
+					<Card>
+						<CardContent>
+							<Typography variant="h3">
+								Please Select a nearby Hub
+							</Typography>
+						</CardContent>
+					</Card>
+				</Grid>
 				{hubs.length > 0 
 					? (Object.keys(hubs).map((i) => (
 					<Grid item xs={4}>
