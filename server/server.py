@@ -14,8 +14,7 @@ def getClosestHubs(lat, long):
     hubs = []
     for hub in cur.fetchall():
         print(hub[4])
-        if abs(hub[4]-float(lat)) < 0.3 and abs(hub[5]-float(long)) < 0.3:
-            hubs.append(hub)
+        hubs.append(hub)
     return jsonify(hubs)
 
 @app.route("/hubs/<id>", methods=["GET"])

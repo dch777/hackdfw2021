@@ -2,6 +2,11 @@ import { React, useEffect, useState } from "react";
 import { Box, Button, ButtonGroup, Card, CardContent, CardActions, CardMedia, Skeleton, Typography, Grid } from '@mui/material';
 import axios from "axios";
 
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 const HubsList = (props) => {
 	
 	const [hubs, setHubs] = useState({})
@@ -19,10 +24,10 @@ const HubsList = (props) => {
 	}, []);
 
 	return (
-		<Box display="flex" justifyContent="center" alignItems="center" minHeight="90vh">
-			<Grid container justifyContent="space-evenly" xs={8} spacing={3}>
+		<Box display="flex" justifyContent="center" alignItems="stretch" minHeight="90vh">
+			<Grid container justifyContent="stretch" xs={8} spacing={3}>
 				<Grid item xs={12}>
-					<Card>
+					<Card raised={true}>
 						<CardContent>
 							<Typography variant="h3">
 								Please Select a nearby Hub
@@ -33,7 +38,7 @@ const HubsList = (props) => {
 				{hubs.length > 0 
 					? (Object.keys(hubs).map((i) => (
 					<Grid item xs={4}>
-						<Card>
+						<Card raised={true}>
 							<CardMedia component="img" image={hubs[i][6]} sx={{mt:1}}/>
 							<CardContent>
 								<Typography variant="h4">

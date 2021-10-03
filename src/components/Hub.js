@@ -3,7 +3,11 @@ import { Avatar, Box, Button, TextField, Card, CardContent, CardActions, CardMed
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import useUnload from "./useUnload"
 import axios from "axios";
-import faker from "faker";
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const modalStyle = {
   position: 'absolute',
@@ -117,7 +121,7 @@ const Hub = (props) => {
 			</Modal>
 			<Grid container justifyContent="space-evenly" xs={ 6 } spacing={ 3 }>
 				<Grid item xs={12}>
-					<Card>
+					<Card raised={true}>
 						<CardContent>
 							<Typography variant="h4">
 								Welcome to {hub[1]}!
