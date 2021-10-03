@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Inspiration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our inspiration for this project came from analyzing the determent in physical interpersonal relationships despite a greatly more connected world. On top of this, recent events such as COVID-19 have led to more and more people becoming heavily isolated. This has led to a decline in relationship quality and overall happiness of some communities.
 
-## Available Scripts
+# What it does
 
-In the project directory, you can run:
+ProxNet is a network which establishes Hubs and allows users to connect to them to meet others physically. By using our web application, users can see Hubs nearby (using GPS location finding) and connect to them. They can also see all the other people connected to the Hub. This allows them to go and meet with others physically through these Hubs.
 
-### `yarn start`
+# How we built it
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In a general sense, we utilized GPS information to set the locations for Hubs and get coordinates of clients. Using this, we calculated an optimal radius that clients would be able to view different Hubs and see other people connected to the Hub. For the backend, we used the Flask API to connect the server database straight and add/remove Hubs and users connected. For the frontend, we used ReactJS for our javascript framework as well as Material UI, a css toolkit to make the website look clean, simple, and intuitive.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Challenges we ran into
 
-### `yarn test`
+The time constraint required to manage our time effectively and split up different sections of the project to maximize efficiency. In addition, we were a team of two, so as Dhruv worked on the frontend with ReactJS, I (Rishit) learned Flask from scratch and successfully implemented an effective backend solution.
+Accomplishments that we're proud of
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We created a user-friendly website that successfully allows user to connect to Hubs, and view all other users connected to those Hubs. Every part of the project works seamlessly, and even though it was my (Rishit) first time learning Flask, I managed to implement a solution that worked perfectly. Also, as two people, we managed to work very efficiently to create a project that correctly solves a major problem we see related to social networking.
 
-### `yarn build`
+# What we learned
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We learned Flask, React JS, Material UI, and database management through web applications.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# What's next for ProxNet
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is greatly expandable, allowing numerous features added to increase the functionality based on groups, settings, etc. Examples of these could be focus groups within Hubs, grouping people based on what they are doing (established by the user). There are also many other features that we could add based on the logistics of different groups/companies in the future.
